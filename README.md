@@ -31,6 +31,4 @@ This repository is dedicated to solving various algorithmic problems and coding 
 
 If you have suggestions for new problems or improvements to existing solutions, please feel free to contribute by submitting a pull request or opening an issue.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
