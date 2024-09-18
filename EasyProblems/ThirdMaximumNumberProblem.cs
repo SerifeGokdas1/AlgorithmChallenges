@@ -11,46 +11,18 @@ namespace AlgorithmChallenges.EasyProblems
 
         //Given an integer array nums, return the third distinct maximum number in this array.
         //If the third maximum does not exist, return the maximum number.
-        public int ThirdMax(int[] nums)
+        public static int ThirdMax(int[] nums)
         {
-            int firstMaximum = int.MinValue;
-            int secondMaximum = int.MinValue;
-            int thirdMaximum = int.MinValue;
-            bool thirdNumberFound = false;
+            HashSet<int> distinctNumbers = new HashSet<int>(nums);
 
-            foreach (var item in nums)
+            List<int> sortedNumbers = distinctNumbers.OrderByDescending(x => x).ToList();
+
+            if (sortedNumbers.Count >= 3)
             {
-
-                if (item == firstMaximum || item == secondMaximum || item == thirdMaximum)
-                {
-                    continue;
-                }
-
-                if (item > firstMaximum)
-                {
-                    thirdMaximum = secondMaximum;
-                    secondMaximum = firstMaximum;
-                    firstMaximum = item;
-                }
-                else if (item > secondMaximum)
-                {
-                    thirdMaximum = secondMaximum;
-                    secondMaximum = item;
-                }
-                else if (item > thirdMaximum)
-                {
-                    thirdMaximum = item;
-                    thirdNumberFound = true;
-                }
+                return sortedNumbers[2]; 
             }
 
-
-            if (thirdNumberFound)
-            {
-                return thirdMaximum;
-            }
-
-            return firstMaximum;
+            return sortedNumbers[0];
 
         }
     }
