@@ -23,16 +23,24 @@
 //Console.WriteLine("Richest Customer Wealth: " + string.Join(", ", result));
 //#endregion
 
-#region  FizzBuzz
+//#region  FizzBuzz
+//using AlgorithmChallenges.EasyProblems;
+
+//int n = 15; 
+//var result = FizzBuzzProblem.FizzBuzz(n);
+
+//foreach (var item in result)
+//{
+//    Console.WriteLine(item);
+//}
+//#endregion
+
+#region ArithmeticSlicesProblem
 using AlgorithmChallenges.EasyProblems;
 
-int n = 15; 
-var result = FizzBuzzProblem.FizzBuzz(n);
-
-foreach (var item in result)
-{
-    Console.WriteLine(item);
-}
+int[] nums = { 5, -2, -9, -16, -23, -30 };
+int result = ArithmeticSlicesProblem.NumberOfArithmeticSlices(nums);
+Console.WriteLine($"Number of arithmetic subarrays: {result}");
 #endregion
 
 #endregion
