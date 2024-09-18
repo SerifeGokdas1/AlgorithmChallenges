@@ -35,12 +35,21 @@
 //}
 //#endregion
 
-#region ArithmeticSlicesProblem
+//#region ArithmeticSlicesProblem
+//using AlgorithmChallenges.EasyProblems;
+
+//int[] nums = { 5, -2, -9, -16, -23, -30 };
+//int result = ArithmeticSlicesProblem.NumberOfArithmeticSlices(nums);
+//Console.WriteLine($"Number of arithmetic subarrays: {result}");
+//#endregion
+
+#region ThirdMaximumNumber
+
 using AlgorithmChallenges.EasyProblems;
 
-int[] nums = { 5, -2, -9, -16, -23, -30 };
-int result = ArithmeticSlicesProblem.NumberOfArithmeticSlices(nums);
-Console.WriteLine($"Number of arithmetic subarrays: {result}");
+int[] nums = { 3, 2, 1 };
+int result = ThirdMaximumNumberProblem.ThirdMax(nums);
+Console.WriteLine($"The third distinct maximum number is: {result}");
 #endregion
 
 #endregion
