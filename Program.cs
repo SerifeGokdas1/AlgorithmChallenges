@@ -43,14 +43,29 @@
 //Console.WriteLine($"Number of arithmetic subarrays: {result}");
 //#endregion
 
-#region ThirdMaximumNumber
+//#region ThirdMaximumNumber
 
-using AlgorithmChallenges.EasyProblems;
+//using AlgorithmChallenges.EasyProblems;
 
-int[] nums = { 3, 2, 1 };
-int result = ThirdMaximumNumberProblem.ThirdMax(nums);
-Console.WriteLine($"The third distinct maximum number is: {result}");
+//int[] nums = { 3, 2, 1 };
+//int result = ThirdMaximumNumberProblem.ThirdMax(nums);
+//Console.WriteLine($"The third distinct maximum number is: {result}");
+
+//#endregion
+
 #endregion
+
+
+#region MediumProblems
+using AlgorithmChallenges.MediumProblems;
+
+int[] nums = { 2, 4, 3, 3, 5, 4, 9, 6 };
+int k = 4;
+int[] result = FindTheMostCompetitiveSubsequenceProblem.MostCompetitive(nums, k);
+foreach (var item in result)
+{
+    Console.WriteLine(item);
+}
 
 #endregion
 
