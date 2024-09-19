@@ -53,19 +53,33 @@
 
 //#endregion
 
+
+#region Number of Steps to Reduce a Number to Zero
+using AlgorithmChallenges.EasyProblems;
+
+int num = 15;
+var result = NumberofStepstoReduceaNumbertoZeroProblem.NumberOfSteps(num);
+Console.WriteLine(result);
+#endregion
+
 #endregion
 
 
 #region MediumProblems
-using AlgorithmChallenges.MediumProblems;
 
-int[] nums = { 2, 4, 3, 3, 5, 4, 9, 6 };
-int k = 4;
-int[] result = FindTheMostCompetitiveSubsequenceProblem.MostCompetitive(nums, k);
-foreach (var item in result)
-{
-    Console.WriteLine(item);
-}
+//#region FindTheMostCompetitiveSubsequenceProblem
+//using AlgorithmChallenges.MediumProblems;
+
+//int[] nums = { 2, 4, 3, 3, 5, 4, 9, 6 };
+//int k = 4;
+//int[] result = FindTheMostCompetitiveSubsequenceProblem.MostCompetitive(nums, k);
+//foreach (var item in result)
+//{
+//    Console.WriteLine(item);
+//}
+//#endregion
+
+
 
 #endregion
 
