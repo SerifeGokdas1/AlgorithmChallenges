@@ -55,11 +55,27 @@
 
 
 #region Number of Steps to Reduce a Number to Zero
+//using AlgorithmChallenges.EasyProblems;
+
+//int num = 15;
+//var result = NumberofStepstoReduceaNumbertoZeroProblem.NumberOfSteps(num);
+//Console.WriteLine(result);
+#endregion
+
+#region Middle of The Linked List Problem
+
 using AlgorithmChallenges.EasyProblems;
 
-int num = 15;
-var result = NumberofStepstoReduceaNumbertoZeroProblem.NumberOfSteps(num);
-Console.WriteLine(result);
+ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+
+ListNode middleNode = MiddleoftheLinkedListProblem.MiddleNode(head);
+
+Console.Write("Orta düğüm ve sonrası: ");
+while (middleNode != null)
+{
+    Console.Write(middleNode.val + " ");
+    middleNode = middleNode.next;
+}
 #endregion
 
 #endregion
