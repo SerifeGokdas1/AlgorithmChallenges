@@ -1,16 +1,16 @@
 ﻿
 #region EasyProblems
 
-//#region RunningSum
+#region RunningSum
 //using AlgorithmChallenges.EasyProblems;
 
 //int[] nums = { 1, 2, 3, 4 };
 //int[] result = RunningSumProblem.RunningSum(nums);
 
 //Console.WriteLine("Running Sum: " + string.Join(", ", result));
-//#endregion
+#endregion
 
-//#region RichestCustomerWealth
+#region RichestCustomerWealth
 
 //using AlgorithmChallenges.EasyProblems;
 
@@ -21,9 +21,9 @@
 //        };
 //int result = RichestCustomerWealthProblem.MaximumWealth(accounts);
 //Console.WriteLine("Richest Customer Wealth: " + string.Join(", ", result));
-//#endregion
+#endregion
 
-//#region  FizzBuzz
+#region  FizzBuzz
 //using AlgorithmChallenges.EasyProblems;
 
 //int n = 15; 
@@ -33,17 +33,17 @@
 //{
 //    Console.WriteLine(item);
 //}
-//#endregion
+#endregion
 
-//#region ArithmeticSlicesProblem
+#region ArithmeticSlicesProblem
 //using AlgorithmChallenges.EasyProblems;
 
 //int[] nums = { 5, -2, -9, -16, -23, -30 };
 //int result = ArithmeticSlicesProblem.NumberOfArithmeticSlices(nums);
 //Console.WriteLine($"Number of arithmetic subarrays: {result}");
-//#endregion
+#endregion
 
-//#region ThirdMaximumNumber
+#region ThirdMaximumNumber
 
 //using AlgorithmChallenges.EasyProblems;
 
@@ -51,7 +51,7 @@
 //int result = ThirdMaximumNumberProblem.ThirdMax(nums);
 //Console.WriteLine($"The third distinct maximum number is: {result}");
 
-//#endregion
+#endregion
 
 
 #region Number of Steps to Reduce a Number to Zero
@@ -64,18 +64,25 @@
 
 #region Middle of The Linked List Problem
 
+//using AlgorithmChallenges.EasyProblems;
+
+//ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+
+//ListNode middleNode = MiddleoftheLinkedListProblem.MiddleNode(head);
+
+//Console.Write("Orta düğüm ve sonrası: ");
+//while (middleNode != null)
+//{
+//    Console.Write(middleNode.val + " ");
+//    middleNode = middleNode.next;
+//}
+#endregion
+
+#region Ransom Note
 using AlgorithmChallenges.EasyProblems;
 
-ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-
-ListNode middleNode = MiddleoftheLinkedListProblem.MiddleNode(head);
-
-Console.Write("Orta düğüm ve sonrası: ");
-while (middleNode != null)
-{
-    Console.Write(middleNode.val + " ");
-    middleNode = middleNode.next;
-}
+bool result = RansomNoteProblem.CanConstruct("ne", "deneme");
+Console.WriteLine("Result: "+result);
 #endregion
 
 #endregion
