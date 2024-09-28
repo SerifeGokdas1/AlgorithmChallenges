@@ -79,14 +79,59 @@
 #endregion
 
 #region Ransom Note
+//using AlgorithmChallenges.EasyProblems;
+
+//bool result = RansomNoteProblem.CanConstruct("ne", "deneme");
+//Console.WriteLine("Result: "+result);
+#endregion
+
+#region Max Consecutive Ones
+//using AlgorithmChallenges.EasyProblems;
+
+//int[] max = new int[6] { 1, 1, 0, 1, 1, 1 };
+//int result = MaxConsecutiveOnesProblem.FindMaxConsecutiveOnes(max);
+//Console.WriteLine("Result: "+ result);
+
+#endregion
+
+#region Find Numbers with Even Number of Digits
+//using AlgorithmChallenges.EasyProblems;
+
+//int[] nums = new int[5] {12, 345, 2, 6, 7896};
+//int result = FindNumberswithEvenNumbefofDigitsProblem.FindNumbers(nums);
+//Console.WriteLine(result);
+#endregion
+
+#region Squares of a Sorted Array
+
+//using AlgorithmChallenges.EasyProblems;
+
+//int[] nums = new int[5] {-4, -1, 0, 3, 10};
+//int[] result = SquaresofaSortedArrayProblem.SortedSquares(nums);
+//Console.WriteLine(result);
+
+#endregion
+
+#region Duplicate Zeros
+
+//using AlgorithmChallenges.EasyProblems;
+
+//int[] nums = new int[8] {1, 0, 2, 3, 0, 4, 5, 0};
+//int[] result = DuplicateZerosProblem.DuplicateZeros(nums);
+//Console.WriteLine(result);
+
+#endregion
+
+#region Merge Sorted Array
 using AlgorithmChallenges.EasyProblems;
 
-bool result = RansomNoteProblem.CanConstruct("ne", "deneme");
-Console.WriteLine("Result: "+result);
+int[] num1 = new int[6] { 1, 2, 3, 0, 0, 0 };
+int[] num2 = new int[3] { 2, 5, 6 };
+int[] result = MergeSortedArrayProblem.Merge(num1, 3, num2, 3);
+Console.WriteLine(result);
 #endregion
 
 #endregion
-
 
 #region MediumProblems
 
