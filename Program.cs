@@ -132,16 +132,39 @@
 #endregion
 
 #region Birthday Cake Candles
-using AlgorithmChallenges.EasyProblems;
-using System.IO;
+//using AlgorithmChallenges.EasyProblems;
+//using System.IO;
 
-List<int> candles = new List<int>{8,2,6,4,8,1,8,3};
+//List<int> candles = new List<int>{8,2,6,4,8,1,8,3};
 
-int result = BirthdayCakeCandlesProblem.birthdayCakeCandles(candles);
+//int result = BirthdayCakeCandlesProblem.birthdayCakeCandles(candles);
 
-Console.WriteLine(result);
+//Console.WriteLine(result);
 
 #endregion
+
+#region Sorting Problem
+
+//using AlgorithmChallenges.EasyProblems;
+
+//List<int> a = new List<int> { 4, 3, 1, 2 };
+//BubbleSortProblem.BubbleSort(a);
+#endregion
+
+#region  Migratory Birds
+
+
+using AlgorithmChallenges.EasyProblems;
+
+List<int> arr = new List<int> { 1, 2, 3, 4 ,5 ,4, 3, 2 ,1 ,3 ,4 };
+
+int result = MigratoryBirdsProblem.migratoryBirds(arr);
+
+Console.WriteLine(result);
+#endregion
+
+
+
 
 #endregion
 
