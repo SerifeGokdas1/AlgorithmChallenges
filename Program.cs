@@ -123,12 +123,24 @@
 #endregion
 
 #region Merge Sorted Array
-using AlgorithmChallenges.EasyProblems;
+//using AlgorithmChallenges.EasyProblems;
 
-int[] num1 = new int[6] { 1, 2, 3, 0, 0, 0 };
-int[] num2 = new int[3] { 2, 5, 6 };
-int[] result = MergeSortedArrayProblem.Merge(num1, 3, num2, 3);
+//int[] num1 = new int[6] { 1, 2, 3, 0, 0, 0 };
+//int[] num2 = new int[3] { 2, 5, 6 };
+//int[] result = MergeSortedArrayProblem.Merge(num1, 3, num2, 3);
+//Console.WriteLine(result);
+#endregion
+
+#region Birthday Cake Candles
+using AlgorithmChallenges.EasyProblems;
+using System.IO;
+
+List<int> candles = new List<int>{8,2,6,4,8,1,8,3};
+
+int result = BirthdayCakeCandlesProblem.birthdayCakeCandles(candles);
+
 Console.WriteLine(result);
+
 #endregion
 
 #endregion
