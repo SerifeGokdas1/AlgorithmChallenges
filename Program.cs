@@ -1,6 +1,27 @@
 ﻿
-#region EasyProblems
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#region EasyProblems
 #region RunningSum
 //using AlgorithmChallenges.EasyProblems;
 
@@ -9,7 +30,6 @@
 
 //Console.WriteLine("Running Sum: " + string.Join(", ", result));
 #endregion
-
 #region RichestCustomerWealth
 
 //using AlgorithmChallenges.EasyProblems;
@@ -22,7 +42,6 @@
 //int result = RichestCustomerWealthProblem.MaximumWealth(accounts);
 //Console.WriteLine("Richest Customer Wealth: " + string.Join(", ", result));
 #endregion
-
 #region  FizzBuzz
 //using AlgorithmChallenges.EasyProblems;
 
@@ -34,7 +53,6 @@
 //    Console.WriteLine(item);
 //}
 #endregion
-
 #region ArithmeticSlicesProblem
 //using AlgorithmChallenges.EasyProblems;
 
@@ -42,7 +60,6 @@
 //int result = ArithmeticSlicesProblem.NumberOfArithmeticSlices(nums);
 //Console.WriteLine($"Number of arithmetic subarrays: {result}");
 #endregion
-
 #region ThirdMaximumNumber
 
 //using AlgorithmChallenges.EasyProblems;
@@ -52,8 +69,6 @@
 //Console.WriteLine($"The third distinct maximum number is: {result}");
 
 #endregion
-
-
 #region Number of Steps to Reduce a Number to Zero
 //using AlgorithmChallenges.EasyProblems;
 
@@ -61,7 +76,6 @@
 //var result = NumberofStepstoReduceaNumbertoZeroProblem.NumberOfSteps(num);
 //Console.WriteLine(result);
 #endregion
-
 #region Middle of The Linked List Problem
 
 //using AlgorithmChallenges.EasyProblems;
@@ -77,14 +91,12 @@
 //    middleNode = middleNode.next;
 //}
 #endregion
-
 #region Ransom Note
 //using AlgorithmChallenges.EasyProblems;
 
 //bool result = RansomNoteProblem.CanConstruct("ne", "deneme");
 //Console.WriteLine("Result: "+result);
 #endregion
-
 #region Max Consecutive Ones
 //using AlgorithmChallenges.EasyProblems;
 
@@ -93,7 +105,6 @@
 //Console.WriteLine("Result: "+ result);
 
 #endregion
-
 #region Find Numbers with Even Number of Digits
 //using AlgorithmChallenges.EasyProblems;
 
@@ -101,7 +112,6 @@
 //int result = FindNumberswithEvenNumbefofDigitsProblem.FindNumbers(nums);
 //Console.WriteLine(result);
 #endregion
-
 #region Squares of a Sorted Array
 
 //using AlgorithmChallenges.EasyProblems;
@@ -111,7 +121,6 @@
 //Console.WriteLine(result);
 
 #endregion
-
 #region Duplicate Zeros
 
 //using AlgorithmChallenges.EasyProblems;
@@ -121,7 +130,6 @@
 //Console.WriteLine(result);
 
 #endregion
-
 #region Merge Sorted Array
 //using AlgorithmChallenges.EasyProblems;
 
@@ -130,7 +138,6 @@
 //int[] result = MergeSortedArrayProblem.Merge(num1, 3, num2, 3);
 //Console.WriteLine(result);
 #endregion
-
 #region Birthday Cake Candles
 //using AlgorithmChallenges.EasyProblems;
 //using System.IO;
@@ -142,7 +149,6 @@
 //Console.WriteLine(result);
 
 #endregion
-
 #region Sorting Problem
 
 //using AlgorithmChallenges.EasyProblems;
@@ -150,7 +156,6 @@
 //List<int> a = new List<int> { 4, 3, 1, 2 };
 //BubbleSortProblem.BubbleSort(a);
 #endregion
-
 #region  Migratory Birds
 
 
@@ -162,7 +167,6 @@
 
 //Console.WriteLine(result);
 #endregion
-
 #region //n adet pozitif sayı girmesini isteyin. Kullanıcının girmiş olduğu sayılardan çift olanlar console'a yazdırın.
 
 //Console.WriteLine("Sayı giriniz:");
@@ -182,7 +186,6 @@
 //}
 
 #endregion
-
 #region //Kullanıcıdan girmiş olduğu sayılardan m'e eşit yada tam bölünenleri console'a yazdırın.
 // Kullanıcıdan pozitif iki sayı girmesini isteyin (n, m).kullanıcıdan n adet pozitif sayı girmesini isteyin.  m'e eşit yada tam bölünenleri yazdırın.
 
@@ -210,7 +213,6 @@
 
 
 #endregion
-
 #region kullanıcıdan pozitif bir sayı girmesini isteyin (n) . n adet kelime girmesi isteyin. kelimeleri sondan başa doğru console'a yazdırın
 
 //Console.WriteLine("Sayı giriniz:");
@@ -227,28 +229,66 @@
 //foreach(var item in vocabulary) { Console.WriteLine(item); }
 
 #endregion
-
 #region Kullanıcıdan bir cümle yazması isteyin. Cümledeki toplam kelime ve harf sayısını console'a yazdırın.
 
-using System.Diagnostics.Metrics;
+//using System.Diagnostics.Metrics;
 
-Console.WriteLine("Bir cümle yazınız:");
-string sentence = Console.ReadLine();
-int letterCount = 0;
-int vocabularyCount = 0;
+//Console.WriteLine("Bir cümle yazınız:");
+//string sentence = Console.ReadLine();
+//int letterCount = 0;
+//int vocabularyCount = 0;
 
-foreach(char item in sentence)
-{
-    if (char.IsLetter(item)) letterCount++;
-}
-string[] vocabulary = sentence.Split(new char[] { ' ', '\t', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+//foreach(char item in sentence)
+//{
+//    if (char.IsLetter(item)) letterCount++;
+//}
+//string[] vocabulary = sentence.Split(new char[] { ' ', '\t', '\n' }, StringSplitOptions.RemoveEmptyEntries);
 
-vocabularyCount = vocabulary.Length;
-Console.WriteLine("Toplam Kelime Sayısı:"+vocabularyCount+" ve harf sayısı:"+letterCount);
+//vocabularyCount = vocabulary.Length;
+//Console.WriteLine("Toplam Kelime Sayısı:"+vocabularyCount+" ve harf sayısı:"+letterCount);
+
+#endregion
+#region String to Integer
+////Read a string, S, and print its integer value; if S cannot be converted to an integer, print Bad String.
+////Note: You must use the String-to-Integer and exception handling constructs built into your submission language.
+////If you attempt to use loops/conditional statements, you will get a  score.
+
+//string S = "4532";
+////List<char> result= new List<char>(S.ToCharArray());
+////string.Concat(S.Where(char.IsDigit));
+
+//try
+//{
+//    Console.WriteLine(int.Parse(S));
+//}
+//catch
+//{
+//    Console.WriteLine("Bad String");
+//}
 
 #endregion
 
+#region CalculatorException
 
+Calculator myCalculator = new Calculator();
+int T = Int32.Parse(Console.ReadLine());
+while (T-- > 0)
+{
+    string[] num = Console.ReadLine().Split();
+    int n = int.Parse(num[0]);
+    int p = int.Parse(num[1]);
+    try
+    {
+        int ans = myCalculator.power(n, p);
+        Console.WriteLine(ans);
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+
+    }
+
+#endregion
 
 
 
