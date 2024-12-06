@@ -154,14 +154,100 @@
 #region  Migratory Birds
 
 
-using AlgorithmChallenges.EasyProblems;
+//using AlgorithmChallenges.EasyProblems;
 
-List<int> arr = new List<int> { 1, 2, 3, 4 ,5 ,4, 3, 2 ,1 ,3 ,4 };
+//List<int> arr = new List<int> { 1, 2, 3, 4 ,5 ,4, 3, 2 ,1 ,3 ,4 };
 
-int result = MigratoryBirdsProblem.migratoryBirds(arr);
+//int result = MigratoryBirdsProblem.migratoryBirds(arr);
 
-Console.WriteLine(result);
+//Console.WriteLine(result);
 #endregion
+
+#region //n adet pozitif sayı girmesini isteyin. Kullanıcının girmiş olduğu sayılardan çift olanlar console'a yazdırın.
+
+//Console.WriteLine("Sayı giriniz:");
+//int n = Convert.ToInt32(Console.ReadLine());
+//List<int> numbers = new List<int>();
+//for(int i=0; i<n; i++)
+//{
+//    Console.WriteLine(i+1+". sayıyı giriniz:");
+//    numbers.Add(Convert.ToInt32(Console.ReadLine()));
+//}
+//foreach(var item in numbers)
+//{
+//    if (item % 2 == 0)
+//    {
+//        Console.WriteLine(item);
+//    }
+//}
+
+#endregion
+
+#region //Kullanıcıdan girmiş olduğu sayılardan m'e eşit yada tam bölünenleri console'a yazdırın.
+// Kullanıcıdan pozitif iki sayı girmesini isteyin (n, m).kullanıcıdan n adet pozitif sayı girmesini isteyin.  m'e eşit yada tam bölünenleri yazdırın.
+
+
+//Console.WriteLine("Sayı giriniz:");
+//int n=Convert.ToInt32(Console.ReadLine());
+//int[] numbers = new int[n];
+//int m = 0;
+//for(int i=-1;i<n; i++)
+//{
+//    Console.WriteLine("Sayı giriniz: ");
+//    if(i!= -1)
+//    {
+//        numbers[i]=Convert.ToInt32(Console.ReadLine());
+//    }
+//    else {  m = Convert.ToInt32(Console.ReadLine()); }
+//}
+//foreach(var item in numbers)
+//{
+//    if(item % m == 0)
+//    {
+//        Console.WriteLine(item);
+//    }
+//}
+
+
+#endregion
+
+#region kullanıcıdan pozitif bir sayı girmesini isteyin (n) . n adet kelime girmesi isteyin. kelimeleri sondan başa doğru console'a yazdırın
+
+//Console.WriteLine("Sayı giriniz:");
+//int n = Convert.ToInt32(Console.ReadLine());
+//string[] vocabulary = new string[n];
+
+//for(int i=0; i<n; i++)
+//{
+//    Console.WriteLine(i+1+". kelimeyi giriniz:");
+//    vocabulary[i]=(Console.ReadLine());
+//}
+
+//Array.Reverse(vocabulary);
+//foreach(var item in vocabulary) { Console.WriteLine(item); }
+
+#endregion
+
+#region Kullanıcıdan bir cümle yazması isteyin. Cümledeki toplam kelime ve harf sayısını console'a yazdırın.
+
+using System.Diagnostics.Metrics;
+
+Console.WriteLine("Bir cümle yazınız:");
+string sentence = Console.ReadLine();
+int letterCount = 0;
+int vocabularyCount = 0;
+
+foreach(char item in sentence)
+{
+    if (char.IsLetter(item)) letterCount++;
+}
+string[] vocabulary = sentence.Split(new char[] { ' ', '\t', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+
+vocabularyCount = vocabulary.Length;
+Console.WriteLine("Toplam Kelime Sayısı:"+vocabularyCount+" ve harf sayısı:"+letterCount);
+
+#endregion
+
 
 
 
