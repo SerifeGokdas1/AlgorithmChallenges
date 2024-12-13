@@ -270,25 +270,88 @@
 
 #region CalculatorException
 
-Calculator myCalculator = new Calculator();
-int T = Int32.Parse(Console.ReadLine());
-while (T-- > 0)
-{
-    string[] num = Console.ReadLine().Split();
-    int n = int.Parse(num[0]);
-    int p = int.Parse(num[1]);
-    try
-    {
-        int ans = myCalculator.power(n, p);
-        Console.WriteLine(ans);
-    }
-    catch (Exception e)
-    {
-        Console.WriteLine(e.Message);
+//using AlgorithmChallenges.EasyProblems;
 
-    }
+//CalculatorExceptionsProblem myCalculator = new CalculatorExceptionsProblem();
+//int T = Int32.Parse(Console.ReadLine());
+//while (T-- > 0)
+//{
+//    string[] num = Console.ReadLine().Split();
+//    int n = int.Parse(num[0]);
+//    int p = int.Parse(num[1]);
+//    try
+//    {
+//        int ans = myCalculator.power(n, p);
+//        Console.WriteLine(ans);
+//    }
+//    catch (Exception e)
+//    {
+//        Console.WriteLine(e.Message);
+
+//    }
+//}
 
 #endregion
+
+#region Time Conversion
+//using AlgorithmChallenges.EasyProblems;
+
+//string s = "07:05:45PM";
+
+//string result = TimeConversionProblem.timeConversion(s);
+
+
+#endregion
+
+#region Generic
+
+//using AlgorithmChallenges.EasyProblems;
+
+//int[] intArray = new int[5] { 8,42,1,96,7};
+//string[] stringArray = new string[3] {"Problem", "Çözme","Yetenekleri"};
+//GenericsProblem.PrintArray<Int32>(intArray);
+//GenericsProblem.PrintArray<String>(stringArray);
+#endregion
+
+
+#region CollectionsProblems
+
+using AlgorithmChallenges.EasyProblems;
+using System.Collections;
+using System.Security.Cryptography.X509Certificates;
+
+Console.WriteLine("20 adet sayı giriniz.");
+ArrayList numbers = new ArrayList();
+
+
+for (int i=0; i<20; i++)
+{
+    while (true)
+    {
+        Console.WriteLine($"{i + 1}. pozitif sayıyı giriniz:");
+        string value = Console.ReadLine();
+
+        if (int.TryParse(value, out int number) && number > 0)
+        {
+            numbers.Add(number); 
+            break; 
+        }
+        else
+        {
+            Console.WriteLine("Lütfen pozitif bir tam sayı giriniz.");
+        }
+    }
+    
+
+}
+
+//CollectionsProblems.primeNonPrimeNumbers(numbers);
+//CollectionsProblems.minMaxNumbers(numbers);
+CollectionsProblems.stringArray();
+
+#endregion
+
+
 
 
 

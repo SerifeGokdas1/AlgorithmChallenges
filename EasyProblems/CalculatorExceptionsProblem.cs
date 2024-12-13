@@ -28,4 +28,5 @@ namespace AlgorithmChallenges.EasyProblems
                 return n * power(n, p - 1);
             }
         }
+    }
 }
